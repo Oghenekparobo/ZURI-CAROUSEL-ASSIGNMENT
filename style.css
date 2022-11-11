@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/pexels-eberhard-grossgasteiger-1002722.jpg');
+
+}
+
+/* carousel container styling */
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* carousel boxws styling and hidden element */
+.carousel .carousel-item,
+.carousel .carousel-item__hidden {
+    display: none;
+
+
+}
+
+
+/* carousel images */
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+/* carousel box visible element */
+.carousel .carousel-item__visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+/* carousel button sections */
+.carousel .carousel-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+
+.carousel .carousel-actions button {
+    border: none;
+    margin: 0 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: firebrick;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+
+/* styles to show carousel butttons on display */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 9999s, opacity 0.1s linear;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+/* keyframes */
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
