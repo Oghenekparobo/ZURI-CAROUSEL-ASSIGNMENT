@@ -11,3 +11,6 @@ This is a solution to zuri kodecamp Introduction to Javascript Week 6 and 7.
 - [HTML] 
 - [CSS] 
 - [JAVASCRPT] 
+
+## LIVE SITE URL
+(https://oghenekparobo.github.io/ZURI-CAROUSEL-ASSIGNMENT)
